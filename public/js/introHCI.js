@@ -17,5 +17,7 @@ $('button').click(likeClick);
 function likeClick(event) {
 	console.log("Clicked on Like");
 	event.preventDefault();
+	ga('create', 'UA-114647887-1', 'auto');
+	ga('send', 'pageview');
 	ga("send", "event", 'like', 'click');
 }
